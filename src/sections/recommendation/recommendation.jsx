@@ -47,7 +47,7 @@ const recommendations = [
     id: 6,
     name: "Mitali Rajpurohit",
     image: Mitali,
-    text: `I've worked with Kinnari since her internship with Walmart and during this journey, I've seen her quickly picking up newer and complex technologies. She has a growth mindset and a work ethic to match. She was instrumental in several initiatives and can independently drive complex projects to completion. She is confident and learns from feedback which helps her grow faster. Kinnari's ability to handle multiple technologies/tasks was unlike any I've seen before and helped increase the productivity of our team. Aakriti is an asset to any team/company and I wish her the very best!`,
+    text: `I've worked with Kinnari since her internship with Walmart and during this journey, I've seen her quickly picking up newer and complex technologies. She has a growth mindset and a work ethic to match. She was instrumental in several initiatives and can independently drive complex projects to completion. She is confident and learns from feedback which helps her grow faster. Kinnari's ability to handle multiple technologies/tasks was unlike any I've seen before and helped increase the productivity of our team. Kinnari is an asset to any team/company and I wish her the very best!`,
     link: "https://www.linkedin.com/in/mitali-rajpurohit01/",
   },
 ];
