@@ -16,6 +16,6 @@ Feel free to reach out to me via [email](mailto:kinnarim.kotadiya@gmail.com) for
 
 ## Download My Resume
 
-You can download my resume directly from [here](https://your-website.com/path-to-your-resume.pdfhttps://kinnari7.github.io/#/resume).
+You can download my resume directly from [here](https://kinnari7.github.io/#/resume).
 
 
