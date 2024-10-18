@@ -1,47 +1,119 @@
 .home-container {
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.home-img {
-    width: 20vw;
-    height: 20vw;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .home-img {
+    width: 15vw; /* Base size for larger screens */
+    height: 15vw;
     border-radius: 50%;
     object-fit: cover;
     object-position: center top;
     margin-bottom: 2vh;
-}
-.home-intro {
-    color: #444444;
-    text-align: center;
-    margin-bottom: 2vh;
-}
-.home-name {
-    font-size: calc(1rem + 1vh);
+  }
+  
+  /* Adjusting home name size */
+  .home-name {
+    font-size: calc(1.5vw + 0.4vh);
+  }
+  
+  /* University and address styles */
+  .home-university,
+  .home-address {
+    font-size: calc(0.8vw + 0.8vh);
     margin-bottom: 1vh;
-}
-.home-university {
-    font-size: calc(0.8rem + 1vh);
-    margin-bottom: 1vh;
-}
-.home-address {
-    font-size: calc(0.6rem + 0.9vh);
-    margin-bottom: 1vh;
-}
-.home-icons-wrapper {
-    text-align: center;
-}
-.home-icons {
-    margin: 0 10px;
+  }
+  
+  /* Button styles */
+  .btn {
+    padding: 12px;
+    font-size: calc(0.8rem + 0.4vh);
+  }
+  
+  /* Icons wrapper */
+  .home-icons-wrapper {
+    margin-top: 2vh;
+  }
+  
+  .home-icons {
+    margin: 0 15px;
     transition: transform 0.3s;
     padding: 10px;
-}  
-.home-icons:hover {
+  }
+  
+  .home-icons:hover {
     transform: scale(1.2);
-}  
-.custom-image {
-    width: 30px;
-    height: 30px;
-}
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .home-img {
+      width: 15vw; /* Increased size for smaller screens */
+      height: 15vw;
+    }
+  
+    .home-name {
+      font-size: calc(2vw + 0.4vh);
+    }
+  
+    .home-university,
+    .home-address {
+      font-size: calc(1.6vw + 0.8vh);
+    }
+  
+    .btn {
+      font-size: calc(0.8rem + 0.6vh);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .home-img {
+      width: 30vw; /* Larger for very small screens */
+      height: 30vw;
+    }
+  
+    .home-name {
+      font-size: calc(2vw + 0.8vh);
+    }
+  
+    .home-university,
+    .home-address {
+      font-size: calc(1.5vw + 0.7vh);
+    }
+  
+    .btn {
+      padding: 10px;
+      font-size: calc(0.6rem + 0.5vh);
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .home-img {
+      width: 35vw; /* Even larger for very small screens */
+      height: 35vw;
+    }
+  
+    .home-name {
+      font-size: calc(3vw + 1vh);
+    }
+  
+    .home-university,
+    .home-address {
+      font-size: calc(2.5vw + 0.6vh);
+    }
+  
+    .btn {
+      padding: 8px;
+      font-size: calc(0.6rem + 0.4vh);
+    }
+  }
+  
+  .row {
+    margin-top: 3vh;
+  }
+  

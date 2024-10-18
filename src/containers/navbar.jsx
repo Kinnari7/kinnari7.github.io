@@ -1,14 +1,15 @@
 // IMPORT LIBRARIES
 import React from "react";
 import { NavLink } from "react-router-dom";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 // IMPORT STYLES
 import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container">
+    <nav className="navbar navbar-expand-lg">
+      <div className="container navbar-custom">
         <NavLink exact to="/" className="navbar-brand">
           Kinnari Kotadiya
         </NavLink>

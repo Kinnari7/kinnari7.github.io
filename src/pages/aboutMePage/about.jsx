@@ -8,7 +8,7 @@ const About = () => {
     <div className="container my-5 d-block">
       <div className="row">
         <div className="col-12">
-          <h1 className="my-4">About Me</h1>
+          <h2 className="my-4">About Me</h2>
         </div>
       </div>
       <div className="row">

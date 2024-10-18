@@ -80,7 +80,7 @@ const Resume = () => {
     <div className="container my-5 d-block">
       <div className="row">
         <div className="col-12 text-center my-4">
-          <a href="/kinnari_resume.pdf" className="btn btn-secondary">
+          <a href="/kinnari_resume.pdf" className="btn btn-outline-dark">
             Download Resume
           </a>
         </div>
@@ -88,7 +88,7 @@ const Resume = () => {
 
       <div className="row">
         <div className="col-12">
-          <h2 className="text-center mb-4">Experience</h2>
+          <h2 className="text-center mb-4">Professional Experience</h2>
         </div>
       </div>
 

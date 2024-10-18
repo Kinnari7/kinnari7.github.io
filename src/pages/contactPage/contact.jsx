@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-intro">
-        <p className="contact-details">Reach out to me on:</p>
+        <p className="contact-details"><b>Reach out to me on:</b></p>
         <div className="contact-emails">
           <a
             href="mailto:kinnarim.kotadiya@gmail.com"
@@ -21,7 +21,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="contact-email"
           >
-            Email - kinnarim.kotadiya@gmail.com
+            <b>Email - kinnarim.kotadiya@gmail.com</b>
           </a>
 
           <a
@@ -30,7 +30,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="contact-email"
           >
-            LinkedIn - Kinnari Kotadiya
+            <b>LinkedIn - Kinnari Kotadiya</b>
           </a>
         </div>
       </div>

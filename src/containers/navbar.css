@@ -71,17 +71,22 @@
 }  
 .nav-item .active {
     color: #111111;
+    font-weight: 600;
 }  
 .nav-icon {
     display: none;
 }
   
   @media screen and (max-width: 960px) {
+    .navbar-custom{
+      background-color: #F5F5F5;
+    }
+
     .nav-menu {
       display: flex;
       flex-direction: column;
       width: 100%;
-      border-top: 1pxsolid #FFFFFF;
+      border-top: 1pxsolid #F5F5F5;
       position: absolute;
       top: 50px;
       left: -110%;
@@ -90,7 +95,7 @@
     }
   
     .nav-menu.active {
-      background: #FFFFFF;
+      background: #F5F5F5;
       left: 0px;
       opacity: 1;
       transition: all 0.5s ease;

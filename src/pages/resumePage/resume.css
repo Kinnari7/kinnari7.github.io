@@ -3,7 +3,8 @@
     padding: 20px 0;
     list-style: none;
   }
-.timeline:before {
+  
+  .timeline:before {
     position: absolute;
     left: 50%;
     top: 0;
@@ -13,20 +14,24 @@
     height: 100%;
     margin-left: -1px;
     background: #c5c5c5;
-}  
-.timeline-item {
+  }
+  
+  .timeline-item {
     position: relative;
     width: 50%;
     padding: 20px 40px;
     box-sizing: border-box;
-}  
-.timeline-item:nth-child(odd) {
+  }
+  
+  .timeline-item:nth-child(odd) {
     left: 0;
-}  
-.timeline-item:nth-child(even) {
+  }
+  
+  .timeline-item:nth-child(even) {
     left: 50%;
-}  
-.timeline-icon {
+  }
+  
+  .timeline-icon {
     position: absolute;
     left: 50%;
     top: 0;
@@ -36,16 +41,63 @@
     background: #fff;
     border: 2px solid #c5c5c5;
     border-radius: 50%;
-}  
-.timeline-content {
+  }
+  
+  .timeline-content {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}  
-.timeline-title {
+  }
+  
+  .timeline-title {
     font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 10px;
-}
+  }
+  
+  /* Responsive CSS for screens below 900px */
+  @media (max-width: 900px) {
+    .timeline:before {
+      left: 10px; /* Move the line to the left on small screens */
+    }
+  
+    .timeline-item {
+      width: 100%;
+      padding: 20px 20px;
+      left: 0 !important; /* Stack items vertically */
+      margin-bottom: 20px;
+    }
+  
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+      left: 0; /* All items will be on the left */
+    }
+  
+    .timeline-icon {
+      left: 10px; /* Align icon with the line on smaller screens */
+      top: 20px;
+    }
+  
+    .timeline-content {
+      margin-left: 40px; /* Add some space to the right of the icon */
+    }
+  }
+  
+  /* Further adjustments for mobile screens below 600px */
+  @media (max-width: 600px) {
+    .timeline-content {
+      padding: 12px;
+      margin-left: 10px;
+    }
+  
+    .timeline-title {
+      font-size: 1rem; /* Smaller text on mobile */
+    }
+  
+    .timeline-icon {
+      width: 15px;
+      height: 15px; /* Smaller icons for mobile */
+    }
+  }
   
