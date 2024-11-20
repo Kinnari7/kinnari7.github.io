@@ -44,7 +44,7 @@ const About = () => {
             AWS, GCP, Docker, Jenkins, and Selenium. I am also skilled in
             multiple programming languages such as JavaScript, Python, Java, and
             TypeScript. My efforts have been recognized with several awards,
-            including the AWS Certified Cloud Practitioner Badge and the
+            including the AWS Certified Developer Associate and the
             Spotlight Award by Reliance.
           </p>
           <p className="about-details">
