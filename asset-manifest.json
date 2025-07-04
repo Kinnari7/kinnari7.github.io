@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.129ddad3.css",
-    "main.js": "/static/js/main.e9c4099f.js",
+    "main.css": "/static/css/main.e0997d96.css",
+    "main.js": "/static/js/main.7fef7492.js",
     "static/js/453.d67ae473.chunk.js": "/static/js/453.d67ae473.chunk.js",
     "static/media/kinnari_profile.jpeg": "/static/media/kinnari_profile.0d82c74b081b9013827b.jpeg",
     "static/media/parth_goswami_profile.jpeg": "/static/media/parth_goswami_profile.e40abdd068b4cdd3c59e.jpeg",
     "static/media/rutul_amin_profile.jpeg": "/static/media/rutul_amin_profile.7b0e15c377e3c9efd98a.jpeg",
+    "static/media/jeeves.jpg": "/static/media/jeeves.607e0af3be4ceb8f0d4e.jpg",
+    "static/media/sql.png": "/static/media/sql.ca43e7ff4eed6220566a.png",
+    "static/media/danske-bank.png": "/static/media/danske-bank.50228e473c63447d9a82.png",
     "static/media/email_icon.png": "/static/media/email_icon.ba7616d4e7de36f4d562.png",
+    "static/media/ajio-reliance-retail.jpeg": "/static/media/ajio-reliance-retail.3193e5bc1bbe6931a66f.jpeg",
     "static/media/mitali_rajpurohit_profile.jpeg": "/static/media/mitali_rajpurohit_profile.9a5722b1203d8704a16b.jpeg",
     "index.html": "/index.html",
-    "main.129ddad3.css.map": "/static/css/main.129ddad3.css.map",
-    "main.e9c4099f.js.map": "/static/js/main.e9c4099f.js.map",
+    "main.e0997d96.css.map": "/static/css/main.e0997d96.css.map",
+    "main.7fef7492.js.map": "/static/js/main.7fef7492.js.map",
     "453.d67ae473.chunk.js.map": "/static/js/453.d67ae473.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.129ddad3.css",
-    "static/js/main.e9c4099f.js"
+    "static/css/main.e0997d96.css",
+    "static/js/main.7fef7492.js"
   ]
 }
