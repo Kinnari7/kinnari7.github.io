@@ -1,15 +1,33 @@
 // IMPORT LIBRARIES
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // IMPORT STYLES
 import "./resume.css";
 
 const Resume = () => {
+  const [showExperience, setShowExperience] = useState(false);
+  const [showEducation, setShowEducation] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setShowExperience(true), 200);
+    setTimeout(() => setShowEducation(true), 700);
+  }, []);
+
   const experiences = [
     {
       id: 1,
+      company: "Xedu.app, Maryland, USA",
+      title: "Software Engineer Intern",
+      date: "January 2025 - May 2025",
+      skills:
+        "(Node.js, Prisma ORM, SQL, Stripe, 100ms streaming, Cron jobs)",
+      content: "Revamped the entire backend database, integrated Stripe payments and 100ms live streaming, and implemented backend cron jobs using Node.js with Prisma and SQL.",
+      link: "https://www.linkedin.com/company/xedu-app/posts/?feedView=all",
+    },
+    {
+      id: 2,
       company: "Infosys, Pune, India",
-      title: "Senior Associate Consultant",
+      title: "Senior Software Engineer",
       date: "September 2023 - January 2024",
       skills:
         "(ReactJS, Typescript, Unite Testing, Redux, Web Design, Azure DevOps)",
@@ -17,7 +35,7 @@ const Resume = () => {
       link: "https://www.linkedin.com/company/infosys/",
     },
     {
-      id: 2,
+      id: 3,
       company: "Openxcell Technolabs (CMMI Level 3), Gujarat, India",
       title: "Senior Software Engineer",
       date: "June 2022 - August 2023",
@@ -27,7 +45,7 @@ const Resume = () => {
       link: "https://www.linkedin.com/company/openxcell/",
     },
     {
-      id: 3,
+      id: 4,
       company: "Openxcell Technolabs (CMMI Level 3), Gujarat, India",
       title: " Associate Software Engineer",
       date: "September 2019 - May 2022",
@@ -37,8 +55,8 @@ const Resume = () => {
       link: "https://www.linkedin.com/company/openxcell/",
     },
     {
-      id: 4,
-      company: "Cygnet Infotech",
+      id: 5,
+      company: "Cygnet Infotech, Gujarat, India",
       title: "Software Developer Intern",
       date: "January 2019 - June 2019",
       skills: "(Python, Angular, Java, Django, SQLite, Bash, Testing)",
@@ -53,9 +71,9 @@ const Resume = () => {
       id: 1,
       school: "California State University, Los Angeles",
       degree: "Master of Science, Computer Science",
-      date: "January 2024 - Present",
-      cgpa: "4.0/4.0",
-      content: "Orientation Leader, Student Assistant",
+      date: "January 2024 - December 2025",
+      cgpa: "4.0 / 4.0",
+      content: "Graduate Teaching Assistant (TA), Orientation Leader (Student Assistant)",
       link: "https://www.calstatela.edu/",
     },
     {
@@ -63,7 +81,7 @@ const Resume = () => {
       school: "LDRP Institute of Technology and Research, Gujarat, India",
       degree: "Bachelor of Engineering, Information Technology",
       date: "August 2015 - May 2019",
-      cgpa: "8.51/10.0",
+      cgpa: "8.51 / 10.0",
       content:
         "Scholarship winner of Shri Maneklal M. Patel Memorial Merit Scholarship for exceptional academic performance during undergraduate studies - Batch of 2019. Member at GDG.",
       link: "https://www.ldrp.ac.in/",
@@ -80,7 +98,10 @@ const Resume = () => {
     <div className="container my-5 d-block">
       <div className="row">
         <div className="col-12 text-center my-4">
-          <a href="/kinnari_resume.pdf" className="btn btn-outline-dark">
+          <a
+            href="/kinnari_resume.pdf"
+            className="btn btn-outline-dark btn-lg animate__animated animate__pulse"
+          >
             Download Resume
           </a>
         </div>
@@ -93,8 +114,12 @@ const Resume = () => {
       </div>
 
       <div className="timeline">
-        {experiences.map((job) => (
-          <div className="timeline-item" key={job.id}>
+        {experiences.map((job, idx) => (
+          <div
+            className={`timeline-item transition-fade-up ${showExperience ? "show" : ""}`}
+            key={job.id}
+            style={{ transitionDelay: `${idx * 120}ms` }}
+          >
             <div className="timeline-icon"></div>
             <div className="timeline-content">
               <h5 className="timeline-title">
@@ -121,8 +146,12 @@ const Resume = () => {
       </div>
 
       <div className="timeline">
-        {education.map((edu) => (
-          <div className="timeline-item" key={edu.id}>
+        {education.map((edu, idx) => (
+          <div
+            className={`timeline-item transition-fade-up ${showEducation ? "show" : ""}`}
+            key={edu.id}
+            style={{ transitionDelay: `${idx * 120}ms` }}
+          >
             <div className="timeline-icon"></div>
             <div className="timeline-content">
               <h5 className="timeline-title">

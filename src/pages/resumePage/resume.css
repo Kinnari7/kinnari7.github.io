@@ -1,103 +1,250 @@
 .timeline {
-    position: relative;
-    padding: 20px 0;
-    list-style: none;
-  }
-  
+  position: relative;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  background: #c5c5c5;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  background: #fff;
+  border: 2px solid #c5c5c5;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Responsive CSS for screens below 900px */
+@media (max-width: 900px) {
   .timeline:before {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    content: ' ';
-    display: block;
-    width: 2px;
-    height: 100%;
-    margin-left: -1px;
-    background: #c5c5c5;
+    left: 10px;
+    /* Move the line to the left on small screens */
   }
-  
+
   .timeline-item {
-    position: relative;
-    width: 50%;
-    padding: 20px 40px;
-    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 20px;
+    left: 0 !important;
+    /* Stack items vertically */
+    margin-bottom: 20px;
   }
-  
-  .timeline-item:nth-child(odd) {
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    left: 0;
+    /* All items will be on the left */
+  }
+
+  .timeline-icon {
+    left: 10px;
+    /* Align icon with the line on smaller screens */
+    top: 20px;
+  }
+
+  .timeline-content {
+    margin-left: 40px;
+    /* Add some space to the right of the icon */
+  }
+}
+
+/* Further adjustments for mobile screens below 600px */
+@media (max-width: 600px) {
+  .timeline-content {
+    padding: 12px;
+    margin-left: 10px;
+  }
+
+  .timeline-title {
+    font-size: 1rem;
+    /* Smaller text on mobile */
+  }
+
+  .timeline-icon {
+    width: 15px;
+    height: 15px;
+    /* Smaller icons for mobile */
+  }
+}
+/* ...existing code... */
+.transition-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.transition-fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  transform: scale(1.02);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+/* ...existing code... */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  background: black; /* purple accent */
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  background: #fff;
+  border: 2px solid black; /* purple border */
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #ede7ff; /* soft purple glow */
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #f9f8fd; /* light purple background */
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(108, 99, 255, 0.08);
+  border-left: 4px solid black; /* accent border */
+}
+
+.timeline-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: black; /* purple title */
+}
+
+/* Responsive CSS for screens below 900px */
+@media (max-width: 900px) {
+  .timeline:before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding: 20px 20px;
+    left: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
     left: 0;
   }
-  
-  .timeline-item:nth-child(even) {
-    left: 50%;
-  }
-  
+
   .timeline-icon {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    margin-left: -10px;
-    background: #fff;
-    border: 2px solid #c5c5c5;
-    border-radius: 50%;
+    left: 10px;
+    top: 20px;
   }
-  
+
   .timeline-content {
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 40px;
   }
-  
+}
+
+/* Further adjustments for mobile screens below 600px */
+@media (max-width: 600px) {
+  .timeline-content {
+    padding: 12px;
+    margin-left: 10px;
+  }
+
   .timeline-title {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-bottom: 10px;
+    font-size: 1rem;
   }
-  
-  /* Responsive CSS for screens below 900px */
-  @media (max-width: 900px) {
-    .timeline:before {
-      left: 10px; /* Move the line to the left on small screens */
-    }
-  
-    .timeline-item {
-      width: 100%;
-      padding: 20px 20px;
-      left: 0 !important; /* Stack items vertically */
-      margin-bottom: 20px;
-    }
-  
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even) {
-      left: 0; /* All items will be on the left */
-    }
-  
-    .timeline-icon {
-      left: 10px; /* Align icon with the line on smaller screens */
-      top: 20px;
-    }
-  
-    .timeline-content {
-      margin-left: 40px; /* Add some space to the right of the icon */
-    }
+
+  .timeline-icon {
+    width: 15px;
+    height: 15px;
   }
-  
-  /* Further adjustments for mobile screens below 600px */
-  @media (max-width: 600px) {
-    .timeline-content {
-      padding: 12px;
-      margin-left: 10px;
-    }
-  
-    .timeline-title {
-      font-size: 1rem; /* Smaller text on mobile */
-    }
-  
-    .timeline-icon {
-      width: 15px;
-      height: 15px; /* Smaller icons for mobile */
-    }
-  }
-  
+}
+
+.transition-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.transition-fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item:hover {
+  box-shadow: 0 4px 24px rgba(108,99,255,0.12);
+  transform: scale(1.02);
+  transition: box-shadow 0.3s, transform 0.3s;
+  background: #f0f0f0; /* light gray background on hover */
+}

@@ -8,6 +8,7 @@ import About from './pages/aboutMePage/about';
 import Resume from './pages/resumePage/resume';
 import Contact from './pages/contactPage/contact';
 import Navbar from './containers/navbar';
+import Project from './pages/projectPage/project';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/resume" element={<Resume />} />
         <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/projects" element={<Project />} />
         <Route element={<p>Path not resolved</p>} />
       </Routes>
     </HashRouter>

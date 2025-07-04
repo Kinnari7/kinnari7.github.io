@@ -1,0 +1,5 @@
+.project-logo {
+  width: 110px;
+  object-fit: contain;
+  border: none; /* removes img-thumbnail border if undesired */
+}

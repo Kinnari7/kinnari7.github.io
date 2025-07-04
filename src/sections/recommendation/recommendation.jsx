@@ -42,14 +42,7 @@ const recommendations = [
     image: Rutul,
     text: `Kinnari has an exceptional growth mindset and consistently drives complex projects to successful completion. Her ability to handle multiple tasks efficiently and incorporate feedback to improve makes her a significant asset to any team.`,
     link: "https://www.linkedin.com/in/rutul-amin/",
-  },
-  {
-    id: 6,
-    name: "Mitali Rajpurohit",
-    image: Mitali,
-    text: `I had the pleasure of working remotely with Kinnari, and her ability to deliver smart, timely results is unmatched. She consistently meets deadlines while maintaining high-quality work and is always eager to learn new things. Her proactive approach and adaptability make her an invaluable team member.`,
-    link: "https://www.linkedin.com/in/mitali-rajpurohit01/",
-  },
+  }
 ];
 
 const Recommendations = () => {
